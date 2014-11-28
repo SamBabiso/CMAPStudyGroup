@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+
+    <style type="text/css">
+            /*html5 semantics tags */
+            /*      artic header, nav, section, article, aside, figure, hgroup, footer {
+                    display: block;
+                }
+        */
+            /*html5 semantics tags */
+            article, aside, figure, footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+
+            /* light css reset */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            h2, h3, h4, h5, p, ul, ol {
+                margin: 0 20px;
+                padding: .5em 0;
+            }
+
+            img {
+                border: 0px;
+            }
+
+            /* =page level container */
+            #pageContainer {
+                margin: 0px auto 0px auto;
+                width: 600px;
+            }
+
+            #pageHeader {
+                margin: 0px auto 0px auto;
+                width: 600px;
+                height: 82px;
+                position: relative;
+            }
+
+            #contentContainer {
+                margin: 0px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                min-height: 500px;
+            }
+
+            #pageFooter {
+                margin: 0px auto;
+                padding-bottom: 20px;
+                width: 600px;
+                position: relative;
+            }
+
+            /*/* Clear Floated Elements */
+            .clearfix:before, .clearfix:after {
+                content: "\0020";
+                display: block;
+                height: 0;
+                visibility: hidden;
+            }
+
+            .clearfix:after {
+                clear: both;
+            }
+
+            .clearfix {
+                zoom: 1;
+            }
+            nav {
+                background-color:bisque;height:750px;width:100px;float:left;
+            }
+            main{
+                background-color:coral;float:left;
+            }
+            aside{
+                background-color:bisque;height:750px;width:200px;float:left;
+            }
+            .asidefooter
+            {
+                background-color:aquamarine;clear:both;text-align:center;
+            }
+            
+            #Mainfooter
+            {
+                background-color:blueviolet;clear:both;text-align:center;
+            }
+        #Mainfooter {
+            width:685Px;align-content:center;
+        }
+        .FirstSecion   {
+            border:dashed;border-color:azure;
+        }
+        .FirstArticle_In_FirstSecion
+        {
+            border:double;border-color:blue;
+        }
+        .SecondArticle_In_FirstSecion
+        {
+               border:solid;border-color:darkgreen;border-bottom-width:medium;
+        }
+    </style>
+
+</head>
+<body>
+    <!--<main style="width:500px"></main>-->
+  
+    <h1> Top Heading h1</h1>
+    <header style="background-color:red; width:685Px;align-content:center">
+        <h1 style="justify-content:center">Main Title of The Web Page</h1>
+        <!--<p>Local and National News</p>-->
+    </header>
+    <nav >
+        <b>Home</b>
+        <ul>
+          
+       
+        <li><a href="html5.html">html5</a></li>
+        <li><a href="CSS3.html">CSS3</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+
+        </ul>
+        <section>
+            <h4>Section inside Nav</h4>
+            <p> 
+            The Nav element Is meant to hold a set of hyperlinks that link to another page or another part within the same page
+</p>
+        </section>
+    </nav>
+
+  
+    
+    <main >
+        <section class="FirstSecion" >
+            <h2>Heading (1st Section)</h2>
+            <article class="FirstArticle_In_FirstSecion">
+                <header>
+                    <h3>This is the heading for the header</h3>
+                    <p>(author, date)</p>
+                </header>
+                <p>This is the story text. This is the story text.</p>
+
+            </article>
+
+            <article class="SecondArticle_In_FirstSecion">
+                <header>
+                    <h3>New Library to be built</h3>
+                    <p>(author, date)</p>
+                </header>
+                <p>This is the story text. This is the story text.</p>
+
+            </article>
+        </section>
+
+        <section class="SecondSection">
+            <h2>Heading (2nd Section)</h2>
+            <article class="FistArticle_In_SecondSection">
+                <header>
+                    <h3>Snow storm is making travel difficult</h3>
+                    <p>(author, date)</p>
+                </header>
+                <p>This is the story text. This is the story text.</p>
+
+            </article>
+
+            <article class="SecondArticle_In_SecondSection">
+                <header>
+                    <h3>Thousands are without power</h3>
+                    <p>(author, date)</p>
+                </header>
+                <p>This is the story text. This is the story text.</p>
+
+            </article>
+        </section>
+
+        <article class="FirstArticle_In_Main">
+            <header>
+                <h3>Section inside article</h3>
+                <p>(author, date)</p>
+            </header>
+            <p>This is the story text. This is the story text.</p>
+            <section class="">
+                <h2>this is the heading for the section)</h2>
+                <p> section content</p>
+            </section>
+
+        </article>
+    </main>
+
+     <aside>
+       <h2>What is Section 508?</h2>
+         <p>
+             Section 508 is a part of the Rehabilitation Act of 1973 which requires that electronic
+             and information technology developed, procured, maintained,
+              or used by the Federal government be accessible to people with disabilities.
+             
+         </p>
+
+         <section id="sectioninsideaside" style="background-color:blue;height:200px;width:200px;float:left;">
+             Other Content goes here
+         </section>
+
+         <footer class="asidefooter" >
+             Copyright © W3Schools.com
+         </footer>
+
+     </aside>
+
+    <footer id="Mainfooter" >
+        <p>Footer Information</p>
+    </footer>
+
+</body>
+</html>

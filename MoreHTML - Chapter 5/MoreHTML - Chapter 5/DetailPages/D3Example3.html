@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <title>Example of (Enter,Exit and Update) Methods </title>
+    <script src="../Scripts/d3.min.js"></script>
+</head>
+<body>
+
+<script>
+
+    var myData = [10,20,50];
+    var samCanvas = d3.select("body")
+                    .append("svg")
+                    .attr("width", 1500)
+                    .attr("height", 1500);
+
+    var circle1 = samCanvas.append("circle")
+                .attr("cx", 30)
+                .attr("cy", 50)
+                .attr("r", 10);
+    var circle2 = samCanvas.append("circle")
+                    .attr("cx", 30)
+                    .attr("cy", 80)
+                    .attr("r", 10);
+    var circle3 = samCanvas.append("circle")
+                    .attr("cx", 30)
+                    .attr("cy", 100)
+                    .attr("r", 10);
+    var circle4 = samCanvas.append("circle")
+                    .attr("cx", 30)
+                    .attr("cy", 110)
+                    .attr("r", 10);
+
+
+    var circle = samCanvas.selectAll("circle")
+                .data(myData)
+                   .attr("fill", "red")
+                 .enter()
+                    .append("circle")
+                        .attr("cx", 100)
+                        .attr("cy", function (d) { return d * 2; })
+                        .attr("r", 30)
+                        .attr("fill", "green")
+                .transition()
+                    .duration()
+                    .attr("cx", 750);
+                            
+                
+
+
+
+
+</script>
+</body>
+</html>

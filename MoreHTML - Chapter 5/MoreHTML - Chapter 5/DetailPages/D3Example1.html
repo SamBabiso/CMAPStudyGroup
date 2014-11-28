@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>D3 Example</title>
+    <script src="../Scripts/d3.min.js"></script>
+</head>
+<body>
+   <!-- <p id="MyP" class="myclass">This is a Paragraph with class</p>-->
+
+    <script>
+
+
+        //d3.select(".myclass").text("My New Test");
+        //console.log(d3.select(".myclass").style(HTMLFontElement, 4, 8));
+     d3.select("body").append("p").text("My Great Test").style("color","red").style("font-size","45px");
+        //d3.select("body").select("#mydiv").append("div").attr(id, "MYDIV").TEX("My Great div");
+
+     var width = 500;
+     var height = 800;
+     var Samcanvas = d3.select("body").append("svg")
+                   .attr("width", width)
+                  .attr("height", height)
+                  .append("g")   //group
+                  .attr("transform", "translate(20,0)");
+        //.call(axis);
+
+
+       var circle = Samcanvas.append("circle")
+        .attr("cx", 250)
+        .attr("cy", 250)
+        .attr("r", 50)
+        .attr("fill", "red")
+        .on("onclick","I am clicked")
+   
+       //var rectangle = Samcanvas.append("rect")
+       // .attr("width", 200)
+       // .attr("height", 130)
+
+       var dataArray = [5, 20, 40, 50, 60];
+       Array.prototype.max = function () {
+           return Math.max.apply(null, this);
+       };
+
+       Array.prototype.min = function () {
+           return Math.min.apply(null, this);
+       };
+
+       //var min = Math.min.apply(null, dataArray);
+       //var max = Math.max.apply(null, dataArray);
+
+       var min = d3.min(dataArray);
+       var max = d3.max(dataArray);
+
+
+       var widthScale = d3.scale.linear()
+                    .domain([min, max])
+                    .range([min, width])
+       var color = d3.scale.linear()
+                   .domain([min, max])
+                    .range(["red", "blue"])
+
+       var axis = d3.svg.axis()
+                    .ticks(5)
+                    .scale(widthScale);
+
+       var line = Samcanvas.append("line")
+        .attr("x1", 0)
+        .attr("y1", 400)
+        .attr("x2", 400)
+        .attr("y2", 420)
+        .attr("stroke", "green")
+        .attr("stroke-width", 20)
+
+ 
+   
+
+
+       var bars = Samcanvas.selectAll("rect")
+        .data(dataArray)
+        .enter()
+           .append("rect")
+            .attr("width", function (d){ return widthScale(d) ;})
+            .attr("height", 50)
+           .attr("fill", function (d) {return color(d);})
+            .attr("y", function (d, i){ return i *30  ; })
+
+       Samcanvas.append("g")
+            .attr("transform", "translate(0,400")
+            .call(axis);
+
+        var matrix = [
+  [11975, 5871, 8916, 2868],
+  [1951, 10048, 2060, 6171],
+  [8010, 16145, 8090, 8045],
+  [1013, 990, 940, 6907],
+    [1013, 990,  'Sam']
+        ];
+
+        var tr = d3.select("body")
+            .append("table")
+            .selectAll("tr")
+            .data(matrix)
+            .enter()
+            .append("tr");
+
+        var td = tr.selectAll("td")
+            .data(function (d) { return d; })
+            .enter()
+            .append("td")
+            .text(function (d) { return d; });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+An article with one title #
+<!-- Title h1 only — no hgroup or header needed -->
+<article>
+  <h1>Article title</h1>
+  <p>Content…</p>
+</article>
+
+
+A article header with title and metadata #
+<!-- Wrapping title and metadata in header -->
+<article>
+  <header>
+    <h1>Article title</h1>
+    <p>(<time datetime="2009-07-13">13th July, 2009</time>)</p>
+  </header>
+  <p>Content…</p>
+</article>
+
+ 
+
+An article with an <hgroup>-enclosed subtitle #
+<!-- Title h1 and subtitle h2 in hgroup -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <p>Content…</p>
+</article>
+
+ 
+
+A article with title, subtitle and metadata #
+<!-- A heading which uses header and hgroup -->
+<article>
+  <header>
+    <hgroup>
+      <h1>Article title</h1>
+      <h2>Article subtitle</h2>
+    </hgroup>
+    <p>(<time datetime="2009-07-13">13th July, 2009</time>)</p>
+  </header>
+  <p>Content…</p>
+</article>
+
+
+Example of nesting heading element levels #
+<!-- Standard nesting of heading elements (uses h1 to h4) -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <section>
+    <h3>Section title</h3>
+    <p>Content…</p>
+      <section>
+        <h4>Subsection title</h4>
+        <p>Content…</p>
+      </section>
+  </section>
+</article>
+
+ 
+
+Example of new-style heading element levels #
+<!-- HTML5-style heading levels—new section resets (h3 is skipped intentionally so the subsection’s title uses h4 styles) -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <section>
+    <h2>Section title</h2>
+    <p>Content…</p>
+      <section>
+        <h4>Subsection title</h4>
+        <p>Content…</p>
+      </section>
+  </section>
+</article>
+

@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <link href="css/html5reset.css" rel="stylesheet" />
+
+
+    <link href="css/style.css" rel="stylesheet" />
+
+        <script >
+            function redirect() {
+                window.close();
+
+            }
+
+ </script>
+    <!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+
+    <style type="text/css">  
+             /*html5 semantics tags */
+ /*      artic header, nav, section, article, aside, figure, hgroup, footer {
+            display: block;
+        }
+*/ 
+        /*html5 semantics tags */
+article, aside, figure, footer, header, hgroup, menu, nav, section 
+{ display: block; }
+
+/* light css reset */
+* { margin : 0; padding : 0; }
+h2, h3, h4, h5, p, ul, ol  { margin : 0 20px; padding : .5em 0; }
+img { border: 0px;}
+
+/* =page level container */
+#pageContainer {
+    margin: 0px auto 0px auto;
+	width: 960px;
+}
+
+#pageHeader {
+    margin:0px auto 0px auto;
+    width:960px;
+    height:82px;
+    position:relative;
+}
+
+#contentContainer {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    min-height: 500px;
+}
+
+#pageFooter {
+    margin: 0px auto;
+    padding-bottom: 20px;
+	width: 960px;
+	position: relative;
+}
+
+/* Clear Floated Elements */
+.clearfix:before, .clearfix:after {content: "\0020"; 
+display: block; height: 0; visibility: hidden;}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<a href="../Html5PageLayout.html" onclick="redirect()">Home</a>
+     <hr />
+
+
+   <!-- <main id="pageContainer"> -->
+
+    <div id="pageContainer">
+
+    <header id="pageHeader">
+        <hgroup>
+            <h1>Page Header in h1</h1>
+            <h2>Page Subheader in h2</h2>
+        </hgroup>
+    </header>
+     <div   id="contentContainer" class="clearfix" >
+    <nav id="pageNav">
+        <header>
+            <hgroup>
+                <h1> Nav Heading</h1>
+                <h2> Nav Heading 2</h2>
+                </hgroup>
+</header>
+        <ul>
+            <li><a href="#">Menu Option 1</a></li>
+            <li><a href="#">Menu Option 2</a></li>
+            <li><a href="#">Menu Option 3</a></li>
+        </ul>
+    </nav>
+    <section id="pageSection1">
+      <header>
+        <hgroup >
+            <h3 style="color:blueviolet">Header in h1 inside section</h3>
+            <h4 style="color:blueviolet" >Subheader in h2 inside section</h4>
+        </hgroup> 
+    </header>
+
+        <article>
+            <header>
+                <h1 style="color:green">Article #1 header</h1>
+            </header>
+            <section>
+                This is the first article.  This is <mark>highlighted</mark>.
+            </section>
+        </article>
+        <article>
+            <header>
+                <h1 style="color:green">Article #2 header</h1>
+            </header>
+            <section>
+                This is the second article.  These articles could be blog posts, etc.  
+            </section>
+        </article>
+    </section>
+    <aside id="pageAside" style="color: chocolate">
+        <section id="pageSection2">
+            <h1>Links (Inside aside section)</h1>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </section>
+        <figure>
+            <img width="80" height="80" 
+              src="C:\HTML5 More Topics\MoreHTML - Chapter 5\MoreHTML - Chapter 5\DetailPages\Nebiyu.JPG"
+                alt="Nebiyu Samuel" />
+            <figcaption>Nebiyu Samuel</figcaption>
+        </figure>
+    </aside>
+    </div>
+    <footer id="pageFooter">
+        Footer - Copyright 2014  
+ 
+</footer>
+            </div>
+
+</body>
+</html>

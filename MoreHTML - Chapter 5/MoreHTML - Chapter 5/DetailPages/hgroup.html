@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+        <script >
+            function redirect() {
+                window.close();
+
+            }
+ </script>
+
+</head>
+<body>
+       
+<a href="../Html5PageLayout.html" onclick="redirect()">Home</a>
+
+    <hr />
+  <h1> Example of nesting heading element levels #</h1> 
+<!-- Standard nesting of heading elements (uses h1 to h4) -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <section>
+    <h3>Section title</h3>
+    <p>Content…</p>
+      <section>
+        <h4>Subsection title</h4>
+        <p>Content…</p>
+      </section>
+  </section>
+</article>
+
+ 
+
+<h1>Example of new-style heading element levels #</h1>
+<!-- HTML5-style heading levels—new section resets (h3 is skipped intentionally so the subsection’s title uses h4 styles) -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <section>
+    <h2>Section title</h2>
+    <p>Content…</p>
+      <section>
+        <h4>Subsection title</h4>
+        <p>Content…</p>
+      </section>
+  </section>
+</article>
+
+ 
+<footer> Both of these will produce the same HTML5 outline: 
+    <br />
+    <a href="../detailPages/hgroup2.html">hgroup more example</a>
+    
+
+</footer>
+</body>
+</html>

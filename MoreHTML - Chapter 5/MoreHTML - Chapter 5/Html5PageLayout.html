@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 
+<html>
+    <head>
+        <title> Welcome to Chapter 5 - More HTML5 </title>
+            <script >
+                function redirect() {
+                    window.close();
+
+                }
+ </script>
+
+        <script>
+            var StepNumber = 1;
+            function FirstStep() {
+                console.time("Steps Time")
+                console.group("Step %i", StepNumber);
+                StepNumber++;
+                console.log("Building ant farms - %i", StepNumber);
+                StepNumber++;
+                console.log("Feeding ants %i", StepNumber);
+                StepNumber++;
+                console.groupEnd();
+                debugger;
+                console.group("%cSecond Group","font-size: x-large")
+                LoadBanners();
+                SoundTrumpets();
+                console.groupEnd();
+                console.timeEnd("Steps Time")
+            };
+            function SecondStep() {
+                console.log("Step %s", StepNumber);
+            };
+            function ThirdStep() {
+                console.log("Step %i", StepNumber);
+            };
+            function LoadBanners() {
+                console.log("Load Banner Step");
+            };
+            function SoundTrumpets() {
+                console.log("Sound Trumpets Step");
+            };
+
+
+
+        </script>
+        <script>
+    function DoStaff() {
+        //console.log("Log Testing by Sam");
+        //console.warn("Warning Testing by Sam");
+        //console.error("Error Testing by Sam");
+        console.group("Steps")
+        FirstStep();
+        SecondStep();
+        ThirdStep();
+        console.groupEnd();
+    };
+
+        </script>
+
+    </head>
+     
+    <body>
+
+       
+        <button onclick="DoStaff()" > Do Staff </button>
+        <header>   
+            <h1><a href="#"> Chapter 5 ( <strong>More HTML5</strong>)</a></h1>
+                <hr />
+       <!--      <h2><a href="#"> <strong>More HTML5!</strong></a></h2>  -->
+
+          <!--   <h1><a href="#">Chapter 6 <strong>HTML5 in the year <del>2013</del> <ins>2014</ins></strong></a></h1> -->
+          
+
+            <nav>
+                <ul>
+                    <li class="active"><a href="\DetailPages\HTMLLayoutsUsingDiv.html">HTML Layout Using &lt;<strong style ="color:blue">Div</strong>&gt; Element</a></li>
+	                <li class="active"><a href="\DetailPages\HTML5SematicPageLayout.html">HTML5 Semantic Page Layout </a></li>
+                    <li class="active"><a href="\DetailPages\HTML5SemanticElementExample.html">HTML5 Semantic Page Layout  </a></li>
+
+           	
+                   
+                    <li><a href="\DetailPages\ArticleWithTitle.html">Article With Title</a></li>
+                   	<li><a href="\DetailPages\HeaderFooterSectionArticle.HTML">Header,Footer,Section,Article</a></li>
+                    
+
+	            	<li><a href="\DetailPages\hgroup.html"> &lt;<strong style ="color:blue">hgroup</strong>&gt; Element</a></li>
+	            	<li><a href="\DetailPages\NavElement.html">&lt;<strong style ="color:blue">Nav</strong>&gt; Element</a></li>
+                    <li><a href="\DetailPages\aside.html">&lt;<strong style ="color:blue">aside</strong>&gt; Element</a></li>
+                   <li><a href="\DetailPages\aside.html">&lt;<strong style ="color:blue">aside</strong>&gt; Element</a></li>
+                   <li><a href="\DetailPages\DefElement.html">Using the &lt;<strong style ="color:blue">dfn</strong>&gt;  element to define a term </a></li>
+                   <li><a href="\DetailPages\Figure.html">Using the &lt;<strong style ="color:blue">figure </strong>&gt;   element to denote a figure </a></li>
+                   <li><a href="\DetailPages\Details.html">Using the &lt;<strong style ="color:blue">details </strong>&gt;   element  </a></li>
+                   <li><a href="\DetailPages\Others.html">Understanding other annotations </a></li>
+                   <li><a href="\DetailPages\Lang.html">Using The &lt;<strong style ="color:blue"> language  </strong>&gt; elements </a></li>
+                   <li><a href="\DetailPages\OrderList.html">Working with Orderd Lists</a></li>
+                   <li><a href="\DetailPages\UnOrderList.html">Working with Unordered lists </a></li>
+                   <li><a href="\DetailPages\DescriptionLists.html">Working with Description Lists </a></li>           
+                   <li><a href="\DetailPages\CustomList.html">Working with Custom Lists </a></li>           
+                  <li><a href="\DetailPages\CSSLists.html">CSS Lists </a></li>           
+                  <li><a href="\DetailPages\ImageAsListItemMarker.html">Image as List Item Marker </a></li>           
+                 <li><a href="\DetailPages\BasicTableElement.html">Basic Table Element </a></li>           
+                 <li><a href="\DetailPages\ModifiedTable.html">Modified Table Example </a></li>           
+
+                 <li><a href="\DetailPages\TableWithHeaderFooter.html">Table With Header and Footer</a></li>           
+                 <li><a href="\DetailPages\TableWithHeaderFooterStyle.html">Table With Header, Footer and Style</a></li>           
+                 <li><a href="\DetailPages\TheadTbodyTfoot.html">Multiple  tbody</a></li>           
+
+
+                 <li><a href="\DetailPages\THeadTbodyTfootWithColSpan.html">Table With ColSpan</a></li>           
+                <li><a href="\DetailPages\TableWithRowSpan.html">Table With RowSpan</a></li>           
+
+                <li><a href="\DetailPages\TableWithColGroup.html">Table With ColGroup</a></li>           
+
+
+                    
+                   
+                                         
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>            
+
+        </header>
+      <hr /><hr />
+        <nav>
+  <ul>
+		<li id="active"><a href="\DetailPages\page2.html">Page 2</a></li>
+		<li><a href="\DetailPages\page2.html">page 2</a></li>
+ 	
+
+		<li><a href="\DetailPages\HTMLLayout - UsingTables.html">HTML Layout - Using Tables</a></li>
+		<li><a href="\DetailPages\Multiple Column Layout.html">Multiuple Columns Layouts - Using Tables</a></li>
+		<li><a href = "\DetailPages\Page Layout using Div.html"> Page Layout using Div </a></li>
+		<li><a href = "\DetailPages\HTML5 Sematic Page Layout.HTML"> HTML5 Sematic Page Layout </a></li>
+		<li><a href = "\DetailPages\HTML Canvas.html"> HTML Canvas </a></li>
+		<li><a href = "\DetailPages\Awesome HTML5 Webpage.html"> Awesome HTML5 Webpage </a></li>
+
+
+
+
+</ul>
+            <!-- ... -->
+        </nav>
+     
+        <div id="main">
+    <article>
+    <hgroup>
+        <h2>Title</h2>
+        <h3>Subtitle</h3>
+    </hgroup>
+     
+    <p>
+        <!-- --->
+    </p>
+</article>
+
+  <article>
+    <hgroup>
+        <h2>Title</h2>
+        <h3>Subtitle</h3>
+    </hgroup>
+     
+    <p>
+        <!-- --->
+    </p>
+</article>
+
+
+            <!-- ... -->
+        </div>
+  
+            <!--<object data="c:\MOREHTML5.pdf" type="application/pdf" width="540" height="540">
+
+              
+                    It appears you don't have a PDF plugin for this browser.
+                    No biggie... you can <a href="C:\MOREHTML5.pdf">
+    click here to
+    download the PDF file.
+</a>
+               
+
+            </object>-->
+      
+
+
+   <a href="#">Below is Footer for the Page</a>  
+ <footer id="contentinfo" class="body">
+		<ul>
+			<li><a href="http://facebook.com/enrique.ramirez.velez" rel="me">facebook</a></li>
+			<li><a href="http://twitter.com/enrique_ramirez" rel="me">twitter</a></li>
+		</ul>
+<!--<a href="..\Html5PageLayout.html">Home</a>-->
+</footer><!-- /#contentinfo -->
+
+    </body>   
+</html>

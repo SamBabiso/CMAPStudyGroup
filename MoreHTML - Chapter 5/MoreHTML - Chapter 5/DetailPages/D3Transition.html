@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Transition Example</title>
+
+    <script src="../Scripts/d3.min.js"></script>
+</head>
+<body>
+    <script>
+
+        var myData = [20, 30];
+
+        var myCanvas = d3.select("body")
+                        .append("svg")
+                        .attr("width", 600)
+                        .attr("height", 600);
+
+        var circle = myCanvas.append("circle")
+                        .attr("cx", 80)
+                        .attr("cy", 100)
+                        .attr("r", 20)
+
+        var circle = myCanvas.selectAll("circle")
+                       .data(myData)
+                            .attr("fill", "blue")
+                        //    .transition()
+                        //        .attr("cx", 120)
+                        //        .duration(2000)
+                        //        .delay(1000)                                
+                        .enter()
+                            .append("circle")
+                            .attr("cx", 40)
+                            .attr("cy", 50)
+                            .attr("r", 30)
+                            .attr("fill", "red")
+        circle.transition()
+                .duration(1500)
+                .delay(2000)
+                .attr("cx", 150)
+                .transition()
+                   .attr("cy", 300)
+                .transition()
+                   .attr("cx", 300)
+                .transition()
+                   .attr("cy", 30)
+               .transition()
+                   .attr("cx", 30)
+                .each("end", function () { d3.select(this).attr("fill", "green"); })
+
+        d3.json("mydata.json", function (data) {
+
+        })
+    </script>
+</body>
+</html>

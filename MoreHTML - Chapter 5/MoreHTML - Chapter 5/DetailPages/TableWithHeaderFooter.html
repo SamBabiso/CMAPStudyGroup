@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+     <script>
+         function redirect() {
+             window.close();
+
+         }
+    </script>
+    <style type="text/css">
+
+       /*
+         ■■ The first style rule applies a blue background color to the header and sets the width of all columns to 100 pixels.
+         ■■ The second style rule applies a yellow background color to the vertical header.
+         ■■ The third style rule applies a green background color to the footer. 
+         ■■ The fourth style rule applies right alignment to the price in the footer. 
+         ■■ The fifth style rule centers the text of all table cells. 
+         ■■ The last style rule applies right alignment to the price cells.
+
+      */
+/*
+        thead th {
+            background-color: #BDEAFF;
+            width: 100px;
+        }
+
+        tbody th {
+            background-color: #FFFF99;
+        }
+
+        tfoot th {
+            background-color: #C2FE9A;
+        }
+
+            tfoot th:last-of-type {
+                text-align: right;
+            }
+
+        td {
+            text-align: center;
+        }
+
+            td:last-of-type {
+                text-align: right;
+            }
+
+    */
+
+            </style>
+
+</head>
+<body>
+    <a href="../Html5PageLayout.html" onclick="redirect()">Home</a>
+        <hr />
+
+    <table>
+        <thead>
+            <tr>
+                <th>Vehicle #</th>
+                <th>Year</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>1957</td>
+                <td>Ford</td>
+                <td>Thunderbird</td>
+                <td>14,000</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>1958</td>
+                <td>Chevrolet</td>
+                <td>Impala</td>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>2012</td>
+                <td>BMW</td>
+                <td>Z4</td>
+                <td>40,000</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>2003</td>
+                <td>Mazda</td>
+                <td>Miata</td>
+                <td>5,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>Total:</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>62,000</th>
+        </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

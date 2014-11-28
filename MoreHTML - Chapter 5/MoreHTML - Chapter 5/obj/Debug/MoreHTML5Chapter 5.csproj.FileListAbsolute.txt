@@ -1,0 +1,6 @@
+C:\HTML5 More Topics\MoreHTML - Chapter 5\MoreHTML - Chapter 5\bin\MoreHTML - Chapter 5.dll.config
+C:\HTML5 More Topics\MoreHTML - Chapter 5\MoreHTML - Chapter 5\bin\MoreHTML - Chapter 5.dll
+C:\HTML5 More Topics\MoreHTML - Chapter 5\MoreHTML - Chapter 5\bin\MoreHTML - Chapter 5.pdb
+C:\HTML5 More Topics\MoreHTML - Chapter 5\MoreHTML - Chapter 5\obj\Debug\MoreHTML - Chapter 5.dll
+C:\HTML5 More Topics\MoreHTML - Chapter 5\MoreHTML - Chapter 5\obj\Debug\MoreHTML - Chapter 5.pdb
+C:\HTML5 More Topics\MoreHTML - Chapter 5\MoreHTML - Chapter 5\obj\Debug\MoreHTML5Chapter 5.csprojResolveAssemblyReference.cache

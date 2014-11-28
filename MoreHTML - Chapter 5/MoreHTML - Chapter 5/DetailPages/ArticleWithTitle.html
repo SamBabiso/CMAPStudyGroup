@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+        <script >
+            function redirect() {
+                window.close();
+
+            }
+ </script>
+</head>
+<body>
+    
+<a href="../Html5PageLayout.html" onclick ="Redirect()">Home</a>
+        <hr />
+    <h1>An article with one title </h1>
+
+    <article>
+        <h1>Definition and Usage</h1>
+        <p>
+The article tag specifies independent, self-contained content.<br />
+An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.<br />
+
+<strong>Potential sources for the article element:</strong><br />
+
+   </p>
+<ul>
+ <li>Forum post</li>
+<li>Blog post</li>
+<li>News story</li>
+<li>Comment</li>
+</ul>
+    </article>
+
+   <h1> A article header with title and metadata #</h1>
+<!-- Wrapping title and metadata in header -->
+<article>
+  <header>
+    <h1>Sample Article title</h1>
+    <p>Sample metadata : 04/20/2014 </p>
+  </header>
+  <p>
+      The section element is not a generic container element. When an element is needed for styling purposes or
+ as a convenience for scripting, authors are encouraged to use the div element instead. A general rule is that
+ the section element is appropriate only if the element's contents would be listed explicitly in the document's outline.
+      </p>
+</article>
+
+  <h1>  An article with an hgroup-enclosed subtitle #</h1>
+<!-- Title h1 and subtitle h2 in hgroup -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <p>Content…</p>
+</article>
+
+
+  <h1>  A article with title, subtitle and metadata #</h1>
+<!-- A heading which uses header and hgroup -->
+<article>
+  <header>
+    <hgroup>
+      <h1>Article title</h1>
+      <h2>Article subtitle</h2>
+    </hgroup>
+    <p>(<time datetime="2009-07-13">13th July, 2009</time>)</p>
+  </header>
+  <p>Content…</p>
+</article>
+
+
+<h1>Example of nesting heading element levels #</h1>
+<!-- Standard nesting of heading elements (uses h1 to h4) -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <section>
+    <h3>Section title</h3>
+    <p>Content…</p>
+      <section>
+        <h4>Subsection title</h4>
+        <p>Content…</p>
+      </section>
+  </section>
+</article>
+
+ 
+
+<h1>Example of new-style heading element levels #</h1>
+<!-- HTML5-style heading levels—new section resets (h3 is skipped intentionally so the subsection’s title uses h4 styles) -->
+<article>
+  <hgroup>
+    <h1>Article title</h1>
+    <h2>Article subtitle</h2>
+  </hgroup>
+  <section>
+    <h2>Section title</h2>
+    <p>Content…</p>
+      <section>
+        <h4>Subsection title</h4>
+        <p>Content…</p>
+      </section>
+  </section>
+</article>
+
+</body>
+</html>
+
+
